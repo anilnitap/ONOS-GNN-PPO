@@ -32,7 +32,7 @@ Software Environment
 
 📊 Results
 
-IEEE-ready figures are stored in `/results/`:
+Ready figures are stored in `/results/`:
 
 * Throughput, Latency, Energy, ROC, Ablation, and λ-Sensitivity plots.
   All results averaged over 10 runs for statistical significance (95% CI).
@@ -57,11 +57,7 @@ See `/dataset/README.txt` for structure and ethics statement.
 ```
 
 
-🔗 Reproducibility
 
-All configuration files and scripts are open-sourced for transparency.
-Repo link (to be added after upload):
-**[https://github.com/yourusername/ONOS-GNN-PPO](https://github.com/yourusername/ONOS-GNN-PPO)**
 
 
 📜 License
