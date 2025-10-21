@@ -1,0 +1,25 @@
+{
+  "name": "GEANT",
+  "type": "backbone",
+  "description": "European research network backbone topology used for healthcare IoT simulation.",
+  "nodes": [
+    {"id": "n1", "type": "switch", "region": "France"},
+    {"id": "n2", "type": "switch", "region": "Germany"},
+    {"id": "n3", "type": "switch", "region": "Italy"},
+    {"id": "n4", "type": "switch", "region": "Spain"},
+    {"id": "n5", "type": "switch", "region": "Netherlands"},
+    {"id": "n6", "type": "switch", "region": "Poland"}
+  ],
+  "links": [
+    {"src": "n1", "dst": "n2", "delay_ms": 5, "bandwidth_mbps": 1000},
+    {"src": "n2", "dst": "n3", "delay_ms": 7, "bandwidth_mbps": 1000},
+    {"src": "n3", "dst": "n4", "delay_ms": 9, "bandwidth_mbps": 800},
+    {"src": "n4", "dst": "n5", "delay_ms": 11, "bandwidth_mbps": 700},
+    {"src": "n5", "dst": "n6", "delay_ms": 8, "bandwidth_mbps": 900},
+    {"src": "n1", "dst": "n5", "delay_ms": 10, "bandwidth_mbps": 850}
+  ],
+  "iot_devices": {
+    "attached_per_node": 10,
+    "traffic_classes": ["Normal", "DoS", "ARP_Spoofing", "PortScan", "Smurf"]
+  }
+}

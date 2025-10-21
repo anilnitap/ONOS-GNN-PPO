@@ -1,0 +1,25 @@
+{
+  "name": "NSFNET",
+  "type": "wide_area",
+  "description": "Classic NSFNET backbone with simulated healthcare IoT traffic for benchmarking.",
+  "nodes": [
+    {"id": "a1", "type": "switch", "region": "California"},
+    {"id": "a2", "type": "switch", "region": "Texas"},
+    {"id": "a3", "type": "switch", "region": "Illinois"},
+    {"id": "a4", "type": "switch", "region": "New York"},
+    {"id": "a5", "type": "switch", "region": "Florida"},
+    {"id": "a6", "type": "switch", "region": "Washington"}
+  ],
+  "links": [
+    {"src": "a1", "dst": "a2", "delay_ms": 6, "bandwidth_mbps": 950},
+    {"src": "a2", "dst": "a3", "delay_ms": 8, "bandwidth_mbps": 900},
+    {"src": "a3", "dst": "a4", "delay_ms": 12, "bandwidth_mbps": 850},
+    {"src": "a4", "dst": "a5", "delay_ms": 10, "bandwidth_mbps": 800},
+    {"src": "a1", "dst": "a6", "delay_ms": 9, "bandwidth_mbps": 750},
+    {"src": "a6", "dst": "a3", "delay_ms": 7, "bandwidth_mbps": 900}
+  ],
+  "iot_devices": {
+    "attached_per_node": 8,
+    "traffic_classes": ["Normal", "DoS", "PortScan", "Smurf"]
+  }
+}
