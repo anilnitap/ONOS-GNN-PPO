@@ -4,8 +4,8 @@ H-CIoT Dataset Documentation
 
 Title: Healthcare IoT (H-CIoT) Network Traffic Dataset
 Version: 1.0 (Modified for ONOS-GNN-PPO Framework)
-Authors: Research Group - ONOS-GNN-PPO Project, 2025
-Contact: yourname@domain.com
+Authors: Anil Ram
+Contact: anilram.nitap@gmail.com
 
 -----------------------------------------------------------
  1. Overview
@@ -90,7 +90,7 @@ Researchers can reproduce the results using:
 If you use this dataset or the derived framework, please cite:
 
 @article{ONOSGNNPPO2025,
-  author    = {Your Name and Co-authors},
+  author    = {Anil Ram},
   title     = {ONOS-GNN-PPO: AI-Driven Secure and Energy-Aware Routing Framework for Healthcare IoT Networks},
   journal   = {IEEE Transactions on Network and Service Management},
   year      = {2025}
